@@ -18,9 +18,127 @@
       </del>
       <ins style="color: yellow">
         <p><strong>Inna zawartość drugiego akapitu</strong></p>
+
       </ins>
+      <h1>Drugi header i tabele</h1>
+      <div style="float:left">
+        <table border="">
+          <thead>
+            <tr>
+              <th>Stanowisko</th>
+              <th>Doświadczenie</th>
+              <th>Zarobki</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Junior</td>
+              <td>1 rok</td>
+              <td>2500 netto</td>
+            </tr>
+
+            <tr>
+              <td>Junior</td>
+              <td>2 lata</td>
+              <td>3000 netto</td>
+            </tr>
+
+            <tr>
+              <td>Junior</td>
+              <td>3 lata</td>
+              <td>4000 netto</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+
+      <div style="float:left">
+        <table border="">
+          <thead>
+            <tr>
+              <th>Stanowisko</th>
+              <th>Doświadczenie</th>
+              <th>Zarobki</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Reg</td>
+              <td>3-5 lat</td>
+              <td>6000 netto</td>
+            </tr>
+
+            <tr>
+              <td>Reg</td>
+              <td>5-7</td>
+              <td>7000 netto</td>
+            </tr>
+
+            <tr>
+              <td>Reg</td>
+              <td>7-10 lat</td>
+              <td>9000 netto</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+
+      <div style="float:left">
+        <table border="">
+          <thead>
+            <tr>
+              <th>Stanowisko</th>
+              <th>Doświadczenie</th>
+              <th>Zarobki</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Senior</td>
+              <td>10-15 lat</td>
+              <td>15000 netto</td>
+            </tr>
+
+            <tr>
+              <td>Senior + menager</td>
+              <td>15-20 lat</td>
+              <td>20000 netto</td>
+            </tr>
+
+            <tr>
+              <td>Senior + coś jeszcze</td>
+              <td>20+ lat</td>
+              <td>30000 netto</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+      <br style="clear:both" />
     </article>
 
-  </body>
+    <article>
+      <form>
+        Podaj swój nick: <input id ="nick">
+      </from>
+      <p>Witaj <strong id="nickout"></strong>
+    </article>
 
+    <script>
+      (function(){
+          var nick = window.document.getElementById('nick');
+          var out = window.document.getElementById('nickout');
+
+          nick.addEventListener('input', function(){
+              out.textContent = this.value;
+          });
+      })();
+    </script>
+
+  </body>
 </html>
