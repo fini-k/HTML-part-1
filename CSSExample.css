@@ -1,1 +1,5 @@
-p.styl1 {background-color:cyan;color:red;}
+body.styl1 {background:cyan;color:darkred;font-size: 40px; font-family: Arial;}
+p.styl1 {font-weight: bold; font-style: italic; text-decoration: underline;}
+span.styl1{color:darkblue; font-size: italic; text-decoration: overline;}
+p.styl2{font-weight: lighter;font-style: normal; font-size: 25px; color:red;font-family: verdana;}
+article.styl1{font-weight: bold; font-style: italic; text-decoration: underline;}

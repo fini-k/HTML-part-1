@@ -3,11 +3,94 @@
   <head>
     <meta charset="utf-8">
     <meta title="Kurs od lekcji 8">
-    <link rel="styl1" href="CSSExample.css">
+    <link rel="stylesheet" href="CSSExample.css">
   </head>
 
-  <body>
-    <p class="styl1"> Styl1 z pliku CSS.</p>
+  <body class="styl1">
+    <a name="body">Kotwica do body</a>
+    <article>
+      <p class="styl1">Styl nr 1 z pliku CSS.</p>
+      <p class="styl2">Styl nr 2 z pliku CSS.</p>
+      <p class="styl1">Styl nr 1 z użyciem <span class="styl1">dodatkowego stylu
+        w &lt;span&gt;</span>
+    </article>
+
+    <article>
+      <a name="linki">Kliknij w poniższe linki:</a>
+      <p class="styl1">
+        <a href ="http://www.kurshtmlcss.pl" target="_blank">Niech będzie ten kurs</a>
+      </p>
+      <p>
+        <a href="ProgressIII.html" target="_blank">Odsyłam do ProgressIII</a>
+      </p>
+      <p>
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      </p>
+      <ul>
+        <li><a href="#body">Odsyłacz do body</a></li>
+        <li><a href="#linki">Odsyłacz do linków</a></li>
+      <p>
+        Kliknij w kotki aby przejść do kotków:
+        <a href="https://www.tapetus.pl/obrazki/n/222138_trzy-male-kotki.jpg"
+        target="_blank"><img src="https://www.tapetus.pl/obrazki/n/222138_trzy-male-kotki.jpg"
+        height="270" width="480"></a>
+      </p>
+    </article>
+    <article class="styl1">
+      <p>Lista numerowana:</p>
+      <ol>
+        <li>Jeden</li>
+        <li>Dwa</li>
+        <li>Trzy</li>
+      </ol>
+    </article>
+    <article>
+      <p>Tabela:</p>
+      <table style ="border: 4px solid black">
+        <thead>
+          <tr >
+            <th style="border: 2px solid red">Lp</th>
+            <th>Owoc</th>
+            <th>Cena</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td style="border: 2px solid red">1</td>
+            <td>Gruszka</td>
+            <td>5zł/kg</td>
+          </tr>
+        </tbody>
+      </table>
+    </article>
+
+    <article>
+      <h1>Formularz 1; Typ : text</h1>
+      <form action="">
+        <label>Nazwisko
+        <input type="text" name="Nazwisko" size="30" maxlength="20">
+        </label>
+      </form>
+      <h2>Formularz 2; Typ : radio</h2>
+      <form action="">
+        <p>Zaznacz odpowiedź:</p>
+        <label><input type="radio" name="A">A. 20 tyś.</label>
+        <label><input type="radio" name="A">B. 40 tyś.</label>
+        <label><input type="radio" name="A">C. 80 tyś.</label>
+      </form>
+      <h3>Fromularz 3; Typ : checkbox</h3>
+      <form action="">
+        <label><input type="checkbox" name="B">A</label>
+        <label><input type="checkbox" name="B">B</label>
+        <label><input type="checkbox" name="B">C</label>
+      </form>
+      <h4>Formularz 4; Typ : textarea</h4>
+      <form action="">
+        <textarea name="textarea"></textarea>
+      </form>
+    </article>
+
   </body>
 
 </html>
