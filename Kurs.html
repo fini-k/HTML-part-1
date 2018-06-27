@@ -65,29 +65,70 @@
       </table>
     </article>
 
-    <article>
-      <h1>Formularz 1; Typ : text</h1>
+    <article style="color:darkblue">
+      <p class="styl1">Formularz 1 - Pole tekstowe.</p>
       <form action="">
         <label>Nazwisko
         <input type="text" name="Nazwisko" size="30" maxlength="20">
         </label>
       </form>
-      <h2>Formularz 2; Typ : radio</h2>
+
+      <p class="styl1">Formularz 2 - Pole opcji.</p>
       <form action="">
         <p>Zaznacz odpowiedź:</p>
         <label><input type="radio" name="A">A. 20 tyś.</label>
         <label><input type="radio" name="A">B. 40 tyś.</label>
         <label><input type="radio" name="A">C. 80 tyś.</label>
       </form>
-      <h3>Fromularz 3; Typ : checkbox</h3>
+
+      <p class="styl1">Fromularz 3 - Pole wyboru</p>
       <form action="">
         <label><input type="checkbox" name="B">A</label>
         <label><input type="checkbox" name="B">B</label>
         <label><input type="checkbox" name="B">C</label>
       </form>
-      <h4>Formularz 4; Typ : textarea</h4>
+
+      <p class="styl1">Formularz 4 - Obszar tekstowy</p>
       <form action="">
         <textarea name="textarea"></textarea>
+      </form>
+
+      <p class="styl1">Formularz 5 - Lista wyboru</p>
+      <form action="">
+        <select name="select">
+          <option>A</option>
+          <option>B</option>
+          <option>C</option>
+        </select>
+      </form>
+
+      <p class="styl1">Formularz 6 - Hasło</p>
+      <form action="">
+        <label>Hasło</label>
+        <input type="password" name="password">
+      </form>
+
+      <p class="styl1">Formularz 7 - Wysyłanie</p>
+      <form action="">
+        <input type="submit" value="Send">
+      </form>
+
+      <p class="styl1">Formularz 8 - Czyszczenie zawartości</p>
+      <form action="">
+        <input type="reset" value="Clear form">
+      </form>
+
+      <p class="styl1">Formularz 9 - Przycisk</p>
+      <form action="">
+        <label>Hasło</label>
+        <input type="password" name="password">
+        <select name="select">
+          <option>A</option>
+          <option>B</option>
+          <option>C</option>
+        </select>
+        <button type="reset" value="reset">Reset</button>
+        <button type="send" value="send">Send</button>
       </form>
     </article>
 
