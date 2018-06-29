@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta title="Piosenka">
+  </head>
+
+  <body>
+    <article>
+      <p><a href="Kurs.html"><button>Powrót</button></a></p>
+      <audio src="Civilian.mp3" controls></audio>
+      <p>Standard:</p>
+      <iframe src="https://www.youtube.com/embed/aGRE_lBBtis">
+      </iframe>
+      <p>Canvas</p>
+      <canvas id="rectangle" width="300" height="210"></canvas>
+      <script>
+        var rectangle = document.getElementById('rectangle');
+        var ctx = rectangle.getContext("2d");
+        ctx.beginPath();
+        ctx.rotate(Math.PI / 60);
+        ctx.rect(30, 20, 250, 150);
+        ctx.fillStyle="blue";
+        ctx.fill();
+        ctx.lineWidth=5;
+        ctx.strokeStyle="red";
+        ctx.stroke();
+      </script>
+    </article>
+  </body>
+</html>
